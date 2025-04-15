@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'avenir_lt_std95_black';
+    src: url('avenirltstd-black-webfont.eot');
+    src: url('avenirltstd-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-black-webfont.woff2') format('woff2'),
+         url('avenirltstd-black-webfont.woff') format('woff'),
+         url('avenirltstd-black-webfont.svg#avenir_lt_std95_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std95_black_oblique';
+    src: url('avenirltstd-blackoblique-webfont.eot');
+    src: url('avenirltstd-blackoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-blackoblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-blackoblique-webfont.woff') format('woff'),
+         url('avenirltstd-blackoblique-webfont.svg#avenir_lt_std95_black_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std45_book';
+    src: url('avenirltstd-book-webfont.eot');
+    src: url('avenirltstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-book-webfont.woff2') format('woff2'),
+         url('avenirltstd-book-webfont.woff') format('woff'),
+         url('avenirltstd-book-webfont.svg#avenir_lt_std45_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std45_book_oblique';
+    src: url('avenirltstd-bookoblique-webfont.eot');
+    src: url('avenirltstd-bookoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-bookoblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-bookoblique-webfont.woff') format('woff'),
+         url('avenirltstd-bookoblique-webfont.svg#avenir_lt_std45_book_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std85_heavy';
+    src: url('avenirltstd-heavy-webfont.eot');
+    src: url('avenirltstd-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-heavy-webfont.woff2') format('woff2'),
+         url('avenirltstd-heavy-webfont.woff') format('woff'),
+         url('avenirltstd-heavy-webfont.svg#avenir_lt_std85_heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std85_heavy_oblique';
+    src: url('avenirltstd-heavyoblique-webfont.eot');
+    src: url('avenirltstd-heavyoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-heavyoblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-heavyoblique-webfont.woff') format('woff'),
+         url('avenirltstd-heavyoblique-webfont.svg#avenir_lt_std85_heavy_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std35_light';
+    src: url('avenirltstd-light-webfont.eot');
+    src: url('avenirltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-light-webfont.woff2') format('woff2'),
+         url('avenirltstd-light-webfont.woff') format('woff'),
+         url('avenirltstd-light-webfont.svg#avenir_lt_std35_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std35_light_oblique';
+    src: url('avenirltstd-lightoblique-webfont.eot');
+    src: url('avenirltstd-lightoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-lightoblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-lightoblique-webfont.woff') format('woff'),
+         url('avenirltstd-lightoblique-webfont.svg#avenir_lt_std35_light_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std65_medium';
+    src: url('avenirltstd-medium-webfont.eot');
+    src: url('avenirltstd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-medium-webfont.woff2') format('woff2'),
+         url('avenirltstd-medium-webfont.woff') format('woff'),
+         url('avenirltstd-medium-webfont.svg#avenir_lt_std65_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std65MdOb';
+    src: url('avenirltstd-mediumoblique-webfont.eot');
+    src: url('avenirltstd-mediumoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-mediumoblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-mediumoblique-webfont.woff') format('woff'),
+         url('avenirltstd-mediumoblique-webfont.svg#avenir_lt_std65MdOb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std55_oblique';
+    src: url('avenirltstd-oblique-webfont.eot');
+    src: url('avenirltstd-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-oblique-webfont.woff2') format('woff2'),
+         url('avenirltstd-oblique-webfont.woff') format('woff'),
+         url('avenirltstd-oblique-webfont.svg#avenir_lt_std55_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std55_roman';
+    src: url('avenirltstd-roman-webfont.eot');
+    src: url('avenirltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avenirltstd-roman-webfont.woff2') format('woff2'),
+         url('avenirltstd-roman-webfont.woff') format('woff'),
+         url('avenirltstd-roman-webfont.svg#avenir_lt_std55_roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

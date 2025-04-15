@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Pizzería Ica" />
+  <meta name="keywords" content="pizza, pizzería, comida, restaurante" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS personalizado desde /static/css/styles.css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <title>Pizzería</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="pagina-inicio">
+
+  <!-- Banner de promociones -->
+  <div class="promo-banner">
+    <span class="promo-text">🎉 ¡Promoción! 2x1 en pizzas todos los viernes | 🚚 Envío gratis desde S/30 | 🍕 ¡Solo por tiempo limitado!</span>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-danger text-white py-2 px-3 d-flex align-items-center justify-content-between flex-wrap" style="position: fixed; top: 30px; width: 100%; z-index: 1000;">
+    <div class="d-flex align-items-center">
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo de la pizzería" class="me-2" style="height: 50px;" />
+      <h1 class="mb-0">BIENVENIDO A PIZZA ICA</h1>
+    </div>
+    <nav class="mt-2 mt-md-0">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('nosotros') }}">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('menu') }}">Menú</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('pedido') }}">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Espacio para compensar el header (ajustado) -->
+  <div class="header-spacer header-inicio"></div>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="contenido text-center py-4 d-flex flex-column align-items-center">
+
+      <!-- Imagen principal enmarcada -->
+      <div class="marco-grande mb-4 d-flex flex-column align-items-center">
+        <img src="{{ url_for('static', filename='img/promo.png') }}" alt="Pizza promo" class="img-grande mb-3">
+        <img src="{{ url_for('static', filename='img/pizzo.png') }}" alt="Pizza clásica" class="img-grande">
+      </div>
+
+      <!-- Otras imágenes .png -->
+      <div class="imagenes-estaticas">
+        <img src="{{ url_for('static', filename='img/pm.png') }}" alt="Promoción artesanal">
+        <img src="{{ url_for('static', filename='img/pp.png') }}" alt="Pizza especial con borde de queso">
+        <img src="{{ url_for('static', filename='img/pv.png') }}" alt="Pizza clásica napolitana">
+      </div>
+
+      <p class="lead mt-4">Prueba nuestras deliciosas pizzas hechas con ingredientes frescos.</p>
+
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="{{ url_for('menu') }}" class="btn btn-warning btn-lg shadow-sm">Ver Menú</a>
+        <a href="{{ url_for('pedido') }}" class="btn btn-success btn-lg shadow-sm">Pedir Ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Pizzería. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Botones flotantes -->
+  <div class="botones-flotantes">
+    <a href="https://wa.me/51999999999" class="btn-wsp" target="_blank" title="Contáctanos por WhatsApp">
+      <img src="{{ url_for('static', filename='img/wsp.png') }}" alt="WhatsApp">
+    </a>
+    <button class="btn-subir" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Volver arriba">⬆</button>
+  </div>
+</body>
+</html>

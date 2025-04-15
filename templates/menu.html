@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Menú - Pizzería Ica" />
+  <meta name="keywords" content="pizza, menú, delivery" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú - Pizzería Ica</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- Banner de promociones -->
+  <div class="promo-banner">
+    <span class="promo-text">🎉 ¡Promoción! 2x1 en pizzas todos los viernes | 🚚 Envío gratis desde S/30 | 🍕 ¡Solo por tiempo limitado!</span>
+  </div>
+
+  <!-- Header con logo y navegación -->
+  <header class="bg-danger text-white py-2 px-3 d-flex align-items-center justify-content-between flex-wrap" style="position: fixed; top: 30px; width: 100%; z-index: 1000;">
+    <div class="d-flex align-items-center">
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo de la pizzería" class="me-2" style="height: 50px;" />
+      <h1 class="mb-0">NUESTRO MENÚ</h1>
+    </div>
+    <nav class="mt-2 mt-md-0">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('inicio') }}">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('nosotros') }}">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('pedido') }}">Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Espaciador para compensar el header fijo -->
+  <div class="header-spacer"></div>
+
+  <!-- Contenido principal -->
+  <main class="container text-center py-5">
+    <section>
+      <h3 class="mb-4">Elige tu pizza favorita</h3>
+      <p class="fs-5">Haz clic en la pizza que más te guste para hacer tu pedido.</p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-4">
+        <!-- Pizza 1 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza1.png') }}" alt="Pizza 1" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Pizza 2 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza2.png') }}" alt="Pizza 2" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Pizza 3 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza3.png') }}" alt="Pizza 3" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Pizza 4 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza4.png') }}" alt="Pizza 4" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Pizza 5 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza5.png') }}" alt="Pizza 5" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+        <!-- Pizza 6 -->
+        <div class="col">
+          <a href="{{ url_for('pedido') }}">
+            <img src="{{ url_for('static', filename='img/pizza6.png') }}" alt="Pizza 6" class="img-fluid rounded shadow-sm">
+          </a>
+        </div>
+      </div>
+      <div class="header-spacer"></div>
+    </section>
+
+    <!-- Botones debajo -->
+    <div class="d-flex justify-content-center gap-3 mt-5">
+      <a href="{{ url_for('inicio') }}" class="btn btn-secondary btn-lg shadow-sm">Inicio</a>
+      <a href="{{ url_for('pedido') }}" class="btn btn-danger btn-lg shadow-sm">Pedir Ahora</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2025 Pizzería. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Botones flotantes -->
+  <div class="botones-flotantes">
+    <a href="https://wa.me/51999999999" class="btn-wsp" target="_blank" title="Contáctanos por WhatsApp">
+      <img src="{{ url_for('static', filename='img/wsp.png') }}" alt="WhatsApp">
+    </a>
+    <button class="btn-subir" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Volver arriba">⬆</button>
+  </div>
+</body>
+</html>
